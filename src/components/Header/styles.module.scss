@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  place-items: center;
+  position: sticky;
+  background-color: var(--theme);
+  top: 0;
+  z-index: 1;
+  
+  .logo {
+    grid-column: 2 / 3;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .user {
+    grid-column: 3 / 4;
+    justify-self: end;
+    
+    img {
+      border-radius: 50%;
+      border: 1px solid gray;
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+  }
+}

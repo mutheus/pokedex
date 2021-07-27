@@ -32,23 +32,11 @@ export default function Home({ pokemon }) {
   
   return (
     <div>
-      <header className={styles.header}>
-        <h1 className={styles.logo}>
-          <Link href="/">
-            <a>Pokedex</a>
-          </Link>
-        </h1>
-        
-        <div className={styles.user}>
-          <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=600"
-            alt="John"
-          />
-        </div>
-      </header>
       <main className={styles.content}>
         <div className={styles.actions}>
           <MdNavigateBefore size={35} />
+          
+          <strong>1st Gen Pokemon</strong>
           
           <MdSearch size={35} />
         </div>
