@@ -1,0 +1,80 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  place-items: center;
+  
+  .logo {
+    grid-column: 2 / 3;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .user {
+    grid-column: 3 / 4;
+    justify-self: end;
+    
+    img {
+      border-radius: 50%;
+      border: 1px solid gray;
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+  }
+}
+
+.content {
+  padding: 0 1em;
+  
+  .actions {
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  .pokeContainer {
+    display: grid;
+    gap: 4em;
+    place-items: center;
+    margin-top: 4em;
+    position: relative;
+    
+    @media(min-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .pokeItem {
+      text-align: center;
+      
+      .bg {
+        width: 12em;
+        border: 1px solid #333;
+        background-color: #f1f2f5;
+        aspect-ratio: 1/1;
+        position: absolute;
+      }
+    }
+  }
+  
+  .btnContainer {
+    display: flex;
+    gap: 10em;
+    justify-content: center;
+    padding: 2em;
+    
+    button {
+      background: none;
+      border: 1px solid #333;
+      padding: 0 16px;
+      height: 36px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+  }
+}
