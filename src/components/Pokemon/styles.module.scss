@@ -1,0 +1,21 @@
+.pokeContainer {
+  display: grid;
+  gap: 4em;
+  place-items: center;
+  margin-top: 4em;
+  
+  
+  @media(min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.loadingMsg {
+  display: flex;
+  place-content: center;
+  height: 10vh;
+  
+  p {
+    font-size: 1.2rem;
+  }
+}

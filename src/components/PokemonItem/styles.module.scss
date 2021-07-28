@@ -1,0 +1,11 @@
+.pokeItem {
+  text-align: center;
+  
+  .shape {
+    width: 12em;
+    border: 1px solid #333;
+    background-color: #f1f2f5;
+    aspect-ratio: 1/1;
+    position: absolute;
+  }
+}
