@@ -5,13 +5,13 @@
 ## 🔥️ Tecnologias
 
 - [ReactJS](https://reactjs.org/)
-- [React.js](https://nextjs.org/)
+- [Next.js](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 
 ## 🚀 Como executar
 
-Clone o projeto e acesse o pasta
+Clone o projeto e acesse a pasta
 
 ```bash
 $ git clone https://github.com/mutheus/pokedex.git && cd pokedex
@@ -30,7 +30,7 @@ $ yarn dev
 
 ## 💻️ Projeto
 
-Projeto desenvolvido a partir da metodologia "mobile fist" utilizando as bibliotecas react-icons para os ícones e react-palette para extração da paleta de cores das imagens. Tipografia por Inconsolata + Hind 🖤.
+Projeto desenvolvido a partir da metodologia "mobile fist" utilizando as bibliotecas react-icons para os ícones e react-palette para extração da paleta de cores das imagens. Tipografia por Inconsolata + Hind 💜️.
 
 <hr>
 
