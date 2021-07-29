@@ -1,0 +1,10 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  position: sticky;
+  background-color: var(--theme);
+  top: 80px;
+  z-index: 1;
+  width: 100%;
+}

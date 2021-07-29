@@ -1,9 +1,21 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Palette } from 'react-palette'
 
 import styles from './styles.module.scss'
 
-export function PokemonItem({ pokemon }) {
+type Pokemon = {
+  id: number;
+  name: string;
+  url: string;
+  image: string;
+}
+
+type PokemonItemProps = {
+  pokemon: Pokemon;
+}
+
+export function PokemonItem({ pokemon }: PokemonItemProps ) {
   return (
     <div className={styles.pokeItem}>
       <Palette src={pokemon.image}>
@@ -12,13 +24,18 @@ export function PokemonItem({ pokemon }) {
         )}
       </Palette>
       
-      <Image 
-        src={pokemon.image}
-        alt={pokemon.name}
-        width={230}
-        height={230}
-      />
-      <h3>{pokemon.name}</h3>
+      <Link href={`/pokemon/${pokemon.name}`}>
+        <Image 
+          src={pokemon.image}
+          alt={pokemon.name}
+          width={230}
+          height={230}
+        />
+      </Link>
+      
+      <Link href={`/pokemon/${pokemon.name}`}>
+        <h3>#{pokemon.id} {pokemon.name}</h3>
+      </Link>
     </div>
   )
 }

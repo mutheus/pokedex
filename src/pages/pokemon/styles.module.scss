@@ -1,0 +1,19 @@
+.pokeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 60em;
+  margin: 0 auto;
+  
+  .pokeProfile {
+    margin: 0 auto;
+    
+    img {
+      width: 80vw !important;
+      
+      @media(min-width: 50em) {
+        width: 50vw !important;
+      }
+    }
+  }
+}

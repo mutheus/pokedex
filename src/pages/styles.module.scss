@@ -1,15 +1,7 @@
 .content {
   padding: 0 1em;
-  
-  .actions {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
-    position: sticky;
-    background-color: var(--theme);
-    top: 80px;
-    z-index: 1;
-  }
+  max-width: 60em;
+  margin: 0 auto;
   
   .title {
     font-size: 1.3rem;
@@ -27,7 +19,6 @@
       border: none;
       padding: 0 16px;
       height: 36px;
-      display: flex;
       place-items: center;
       font-weight: 500;
     }

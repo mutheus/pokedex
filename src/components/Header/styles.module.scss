@@ -7,6 +7,8 @@
   background-color: var(--theme);
   top: 0;
   z-index: 1;
+  max-width: 60em;
+  margin: 0 auto;
   
   .logo {
     grid-column: 2 / 3;
@@ -20,7 +22,7 @@
     
     img {
       border-radius: 50%;
-      border: 1px solid gray;
+      border: 1px solid #333;
       width: 45px;
       height: 45px;
       object-fit: contain;

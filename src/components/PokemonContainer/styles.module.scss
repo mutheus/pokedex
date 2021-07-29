@@ -4,8 +4,7 @@
   place-items: center;
   margin-top: 4em;
   
-  
-  @media(min-width: 800px) {
+  @media(min-width: 50em) {
     grid-template-columns: 1fr 1fr;
   }
 }

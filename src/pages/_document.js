@@ -9,8 +9,9 @@ class MyDocument extends Document {
           <title>Pokemon App</title>
           <meta name="description" content="1ts Generation Pokémon List" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Inconsolata&display=swap" rel="stylesheet" />
+          <link rel="icon" type="image/png" href="favicon.png" />
         </Head>
         <body>
           <Main />
