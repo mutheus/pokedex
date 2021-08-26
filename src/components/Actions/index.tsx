@@ -19,7 +19,7 @@ export function Actions({ leftIcon, rightIcon, text }: ActionsProps ) {
   })
   
   return (
-    <div className={styles.actions} style={{boxShadow: position > 0 ? 'rgba(0, 0, 0, 0.16) 0px 1px 4px' : 'none'}}>
+    <div className={styles.actions} style={{boxShadow: position > 0 ? 'rgba(0, 0, 0, 0.16) 0px 6px 4px -6px' : 'none'}}>
       <Link href="/">
         {leftIcon}
       </Link>

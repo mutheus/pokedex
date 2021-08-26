@@ -8,7 +8,7 @@ export function PokemonContainer({ data }) {
   const result = data.results.map((item, index) => {
     const str = item.url,
       imgIndex = str.match(/\/[0-9]+/),
-      imageURL = `https://pokeres.bastionbot.org/images/pokemon${imgIndex}.png`,
+      imageURL = `https://cdn.traction.one/pokedex/pokemon/${imgIndex}.png`,
       id = imgIndex.join('').replace('/', '')
       
     return {

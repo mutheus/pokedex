@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['images.unsplash.com','pokeres.bastionbot.org'],
+    domains: ['images.unsplash.com','cdn.traction.one'],
   },
   reactStrictMode: true,
 }

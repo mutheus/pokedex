@@ -17,26 +17,28 @@ export default function Pokemon({ pokemon }) {
   if (router.isFallback) return <div>Loading...</div>
   
   return (
-    <div className={styles.pokeContainer}>
+    <>
       <Actions leftIcon={<MdClear size={30} />} rightIcon={<MdFavoriteBorder size={30} />} text={pokemon.name} />
-      
-      <div className={styles.pokeProfile}>
-        <h1>{pokemon.name}</h1>
         
-        <Image 
-          width={220}
-          height={220}
-          src={pokemon.image}
-          alt={pokemon.name}
-        />
-      
-        <div className={styles.pokeInfo}>
-          <p><strong>Ability:</strong> {pokemon.ability}</p>
-          <p><strong>Moves:</strong> {pokemon.moves}</p>
-          <p><strong>Type:</strong> {pokemon.type}</p>
+      <div className={styles.pokeContainer}>
+        <div className={styles.pokeProfile}>
+          <h1>{pokemon.name}</h1>
+          
+          <Image 
+            width={220}
+            height={220}
+            src={pokemon.image}
+            alt={pokemon.name}
+          />
+        
+          <div className={styles.pokeInfo}>
+            <p><strong>Ability:</strong> {pokemon.ability}</p>
+            <p><strong>Moves:</strong> {pokemon.moves}</p>
+            <p><strong>Type:</strong> {pokemon.type}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
@@ -62,7 +64,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const pokemon = {
     id: data.id,
     name: data.name,
-    image: `https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`,
+    image: `https://cdn.traction.one/pokedex/pokemon/${data.id}.png`,
     ability: data.abilities.map(item => item.ability.name).join(', '),
     moves: data.moves.map(item => item.move.name).slice(0, 5).join(', '),
     type: data.types.map(item => item.type.name).join(', ')
